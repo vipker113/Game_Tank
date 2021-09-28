@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body onkeydown="moveTank(event)">
+    <div id="main-border">
+        <img id="tank-img" style="position: absolute; top: 150px; left: 0px; transform: rotate(90deg); z-index: 2;" width="30" height="30" src="/images/tank.png" alt="tank">
+        <!-- <img id="boom-img" style="position: absolute; " width="30" height="30" src="/images/boom.png" alt="boom"> -->
+        <div id="boom1"></div>
+        <div id="boom2"></div>
+        <div id="boom3"></div>
+        <div id="boom4"></div>
+        <div id="boom5"></div>
+        <div id="boom6"></div>
+        <div id="boom7"></div>
+        <div id="boom8"></div>
+        <div id="boom9"></div>
+        <div id="boom10"></div>
+        <div id="boom11"></div>
+        <div id="boom12"></div>
+        <span id="finish">YOU WIN</span>
+        <span id="span0">GAME OVER</span>
+        <button id="reload" onclick="reload()">Quay Lại</button>
+        <img width="60px" height="328px" style="position: absolute; top: 0px; left: 1288px; z-index: 1;" src="/images/caro.jpg" alt="">
+        <button id="start" onclick="moveBoomDown()">START</button>
+    </div>
+    <div id="div2">
+        <span id="span1">HP:</span>
+        <div style="display: block ; background-color: green" width="20px" height="20px" id="hp">20</div>
+        <div id="thanhHp" style="margin-left: 10px; border: 1px solid; width: 202px; height: 16px;">
+            <div id="cayHp" style="background-color: green; width: 200px; height: 14px;"></div>
+        </div>
+        <br>
+        <button id="hit" onclick="getHit()">HIT</button>
+        <button id="virtualKB" onclick="openKB()">Bật Bàn Phím Ảo</button>
+    </div>
+    <table id="keyboard">
+        <tr>
+            <td></td>
+            <td>
+                <!-- <input class="ip" type="button" value="⬆" onclick="moveUp()"> -->
+                <button class="bt" onclick="moveUp()">⬆</button>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <!-- <input class="bt" type="button" value="⬅" onclick="moveLeft()"> -->
+                <button class="bt" onclick="moveLeft()">⬅</button>
+            </td>
+            <td></td>
+            <td>
+                <!-- <input class="bt" type="button" value="➡" onclick="moveRight()"> -->
+                <button class="bt" onclick="moveRight()">➡</button>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <!-- <input class="bt" type="button" value="⬇" onclick="moveDown()"> -->
+                <button class="bt" onclick="moveDown()">⬇</button>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <!-- <button id="test" onclick="randomBoom()">Test Random</button> -->
+    <script src="/JS/main.js"></script>
+</body>
+
+</html>
