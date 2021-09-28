@@ -8,7 +8,7 @@
     position: relative;
     width: 1350px;
     height: 330px;
-    background-image: url("/images/a.jpg");
+    background-image: url("a.jpg");
     border: 1px solid black;
 }
 

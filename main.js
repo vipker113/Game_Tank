@@ -67,18 +67,18 @@ class Boom {
     }
 }
 
-let boom1 = new Boom("/images/boom.png", 30, 30, 0, 180);
-let boom2 = new Boom("/images/boom.png", 30, 30, 180, 270);
-let boom3 = new Boom("/images/boom.png", 30, 30, 90, 360);
-let boom4 = new Boom("/images/boom.png", 30, 30, 120, 450);
-let boom5 = new Boom("/images/boom.png", 30, 30, 60, 540);
-let boom6 = new Boom("/images/boom.png", 30, 30, 270, 630);
-let boom7 = new Boom("/images/boom.png", 30, 30, 30, 720);
-let boom8 = new Boom("/images/boom.png", 30, 30, 120, 810);
-let boom9 = new Boom("/images/boom.png", 30, 30, 30, 900);
-let boom10 = new Boom("/images/boom.png", 30, 30, 240, 990);
-let boom11 = new Boom("/images/boom.png", 30, 30, 150, 1080);
-let boom12 = new Boom("/images/boom.png", 30, 30, 210, 1170);
+let boom1 = new Boom("boom.png", 30, 30, 0, 180);
+let boom2 = new Boom("boom.png", 30, 30, 180, 270);
+let boom3 = new Boom("boom.png", 30, 30, 90, 360);
+let boom4 = new Boom("boom.png", 30, 30, 120, 450);
+let boom5 = new Boom("boom.png", 30, 30, 60, 540);
+let boom6 = new Boom("boom.png", 30, 30, 270, 630);
+let boom7 = new Boom("boom.png", 30, 30, 30, 720);
+let boom8 = new Boom("boom.png", 30, 30, 120, 810);
+let boom9 = new Boom("boom.png", 30, 30, 30, 900);
+let boom10 = new Boom("boom.png", 30, 30, 240, 990);
+let boom11 = new Boom("boom.png", 30, 30, 150, 1080);
+let boom12 = new Boom("boom.png", 30, 30, 210, 1170);
 
 function moveBoomDown() {
     boom1.moveBoom();
@@ -197,7 +197,7 @@ function moveRight() {
 }
 
 function explosion() {
-    document.getElementById("tank-img").src = "/images/explosion.png"
+    document.getElementById("tank-img").src = "explosion.png"
 }
 
 function checkExplosion() {
